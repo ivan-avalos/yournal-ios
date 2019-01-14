@@ -1,0 +1,20 @@
+/* 
+  Yournal.strings
+  Yournal
+
+  Created by Iván Ávalos on 11/18/18.
+  Copyright © 2018 Iván Ávalos. All rights reserved.
+*/
+
+"edit" = "Edit";
+
+"delete" = "Delete";
+"delete.title" = "Are you sure you want to delete?";
+"delete.cancel" = "Cancel";
+"delete.OK" = "OK";
+
+"logout" = "Logout";
+"logout.message" = "Are you sure you want to logout?";
+"logout.about" = "About";
+
+"about.website" = "Website";

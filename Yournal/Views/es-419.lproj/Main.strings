@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "1G1-pv-3L4"; */
+"1G1-pv-3L4.text" = "Título";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Dw0-Aq-WMc"; */
+"Dw0-Aq-WMc.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Yournal"; ObjectID = "cMO-zI-Kap"; */
+"cMO-zI-Kap.title" = "Yournal";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gSm-ms-vSb"; */
+"gSm-ms-vSb.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "iNH-ru-wFK"; */
+"iNH-ru-wFK.title" = "Cerrar sesión";
+
+/* Class = "UITableViewController"; title = "addEditNote"; ObjectID = "pig-LL-o4b"; */
+"pig-LL-o4b.title" = "addEditNote";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "qDn-RD-hl0"; */
+"qDn-RD-hl0.text" = "Date";
+
+/* Class = "UILabel"; text = "Body:"; ObjectID = "ugY-ft-QDn"; */
+"ugY-ft-QDn.text" = "Cuerpo:";
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "zke-sZ-R3X"; */
+"zke-sZ-R3X.placeholder" = "Título";
