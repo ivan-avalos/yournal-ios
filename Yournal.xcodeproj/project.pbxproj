@@ -99,6 +99,7 @@
 		E3193888219FBD3000B1225A /* Yournal */ = {
 			isa = PBXGroup;
 			children = (
+				E3193889219FBD3000B1225A /* AppDelegate.swift */,
 				E3193895219FBD3300B1225A /* Info.plist */,
 				E31938A8219FEAAB00B1225A /* Resources */,
 				E31938AA219FEAD800B1225A /* Configuration */,
@@ -112,12 +113,11 @@
 		E31938A7219FEA9C00B1225A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E3193889219FBD3000B1225A /* AppDelegate.swift */,
 				E319388B219FBD3000B1225A /* LoginViewController.swift */,
 				E319389D219FC6EC00B1225A /* MainViewController.swift */,
-				E31938A1219FDE7500B1225A /* NoteCell.swift */,
 				E31938A5219FEA8E00B1225A /* ViewerViewController.swift */,
 				E313E11D21A25A0F00B26C95 /* NoteViewController.swift */,
+				E31938A1219FDE7500B1225A /* NoteCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
