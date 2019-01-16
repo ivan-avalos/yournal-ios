@@ -226,7 +226,7 @@ extension MainViewController: CustomIOSAlertViewDelegate {
     func customIOS7dialogButtonTouchUp(inside alertView: Any!, clickedButtonAt buttonIndex: Int) {
         if buttonIndex == 0 {
             UIApplication.shared.open(
-                URL(string: "https://yournal.robotronica.mx")!,
+                URL(string: "http://yournal.dulcedosystems.com")!,
                 options: [:], completionHandler: nil)
         } else if buttonIndex == 1 {
             (alertView as! CustomIOSAlertView).close()
