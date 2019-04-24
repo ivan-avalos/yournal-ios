@@ -126,7 +126,8 @@ class MainViewController: UITableViewController {
             viewerVC.delegate = self
             viewerVC.noteID = dataset.reversed()[selectedRow].uid
         } else if segue.identifier == "addEditNote" {
-            let noteVC = segue.destination as! NoteViewController
+            let navigationVC = segue.destination as! UINavigationController
+            let noteVC = navigationVC.topViewController as! NoteViewController
             noteVC.code = noteCode
             noteVC.noteID = editNoteID
         }

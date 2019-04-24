@@ -48,6 +48,7 @@ class ViewerViewController: UIViewController {
                 .observe(.value, with: { (snapshot) in
                     if let note = snapshot.value as? [String: String] {
                         /*self.navigationItem.title = note["title"]*/
+                        self.title = note["title"]
                         self.titleLabel.text = note["title"]
                         self.dateLabel.text = note["date"]
                         self.bodyTextView.text = note["body"]

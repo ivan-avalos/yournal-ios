@@ -33,6 +33,7 @@ class NoteViewController: UIViewController, UITextFieldDelegate {
     var code: NoteCode!
     var noteID: String?
     var note: DatabaseReference!
+    var dismiss = false
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var bodyTextView: UITextView!
@@ -93,6 +94,10 @@ class NoteViewController: UIViewController, UITextFieldDelegate {
     
     @objc func keyboardWillHide(_ notification: Notification) {
         bottomConstraint.constant = 0
+        if dismiss {
+            dismiss(animated: true, completion: nil)
+            navigationController?.popViewController(animated: true)
+        }
     }
     
     @IBAction func onDonePressed(_ sender: UIBarButtonItem) {
@@ -112,8 +117,14 @@ class NoteViewController: UIViewController, UITextFieldDelegate {
             note?.child("body").setValue(bodyTextView.text)
         }
         
-        dismiss(animated: true, completion: nil)
-        navigationController?.popViewController(animated: true)
+        dismiss = true
+        view.endEditing(false)
     }
+    
+    @IBAction func onCancelPressed(_ sender: UIBarButtonItem) {
+        dismiss = true
+        view.endEditing(false)
+    }
+    
 
 }
