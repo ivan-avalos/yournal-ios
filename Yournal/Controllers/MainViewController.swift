@@ -107,7 +107,7 @@ class MainViewController: UITableViewController {
         let deleteAction =
             UITableViewRowAction(style: .destructive, title: NSLocalizedString("delete", comment: "Edit button"))
         { (action, indexPath) in
-            self.deleteNote(id: self.dataset.reversed()[indexPath.row].uid)
+            self.deleteNote(id: self.dataset.reversed()[indexPath.row].uid, completion: nil)
         }
         
         return [deleteAction, editAction]
@@ -146,7 +146,7 @@ class MainViewController: UITableViewController {
         performSegue(withIdentifier: "addEditNote", sender: self)
     }
     
-    func deleteNote(id: String) {
+    func deleteNote(id: String, completion: (()->())?) {
         let alertController =
             UIAlertController(
                 title: NSLocalizedString("delete", comment: "Title for alert"),
@@ -156,8 +156,10 @@ class MainViewController: UITableViewController {
         let deleteAction =
             UIAlertAction(title: NSLocalizedString("delete.OK",comment: "OK button"),
                           style: .destructive) { (alertAction) in
-            self.ref.child("users").child(self.auth.uid).child(id).removeValue()
-        }; alertController.addAction(deleteAction)
+                            self.ref.child("users").child(self.auth.uid).child(id).removeValue()
+                            completion?()
+        };
+        alertController.addAction(deleteAction)
         
         let cancelAction =
             UIAlertAction(title: NSLocalizedString("delete.cancel", comment: "Cancel button"),
@@ -241,7 +243,7 @@ extension MainViewController: ViewerDelegate {
         editNote(noteID: id)
     }
     
-    func deleteNote(withID id: String) {
-        deleteNote(id: id)
+    func deleteNote(withID id: String, completion: @escaping ()->()) {
+        deleteNote(id: id, completion: completion)
     }
 }

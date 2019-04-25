@@ -16,4 +16,5 @@ target 'Yournal' do
 
   pod 'ProgressHUD'
   pod 'CustomIOSAlertView'
+  pod 'MMMarkdown'
 end

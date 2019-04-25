@@ -110,53 +110,15 @@
         <scene sceneID="kIA-3u-l7I">
             <objects>
                 <viewController id="zhV-zT-S9I" customClass="ViewerViewController" customModule="Yournal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4aL-To-hB1">
+                    <wkWebView key="view" contentMode="scaleToFill" id="5r7-Ya-Vtk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bmx-6w-Ey6">
-                                <rect key="frame" x="15" y="79" width="345" height="588"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="vut-ee-10v">
-                                        <rect key="frame" x="0.0" y="0.0" width="73" height="67.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSm-ms-vSb">
-                                                <rect key="frame" x="0.0" y="0.0" width="73" height="43"/>
-                                                <fontDescription key="fontDescription" name="LMRoman10-Regular" family="Latin Modern Roman" pointSize="30"/>
-                                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dw0-Aq-WMc">
-                                                <rect key="frame" x="0.0" y="46" width="36.5" height="21.5"/>
-                                                <fontDescription key="fontDescription" name="LMRoman10-Regular" family="Latin Modern Roman" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnr-CQ-7hI">
-                                        <rect key="frame" x="0.0" y="77.5" width="345" height="510.5"/>
-                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="LMRoman10-Regular" family="Latin Modern Roman" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Dnr-CQ-7hI" secondAttribute="trailing" id="hNd-iV-Pce"/>
-                                    <constraint firstItem="Dnr-CQ-7hI" firstAttribute="leading" secondItem="Bmx-6w-Ey6" secondAttribute="leading" id="zLY-Rl-bWj"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="S8T-UB-Z08" firstAttribute="bottom" secondItem="Bmx-6w-Ey6" secondAttribute="bottom" id="0Dy-O8-87G"/>
-                            <constraint firstItem="Bmx-6w-Ey6" firstAttribute="leading" secondItem="S8T-UB-Z08" secondAttribute="leading" constant="15" id="6d7-k6-Vi0"/>
-                            <constraint firstItem="S8T-UB-Z08" firstAttribute="trailing" secondItem="Bmx-6w-Ey6" secondAttribute="trailing" constant="15" id="V7U-0H-K0z"/>
-                            <constraint firstItem="Bmx-6w-Ey6" firstAttribute="top" secondItem="S8T-UB-Z08" secondAttribute="top" constant="15" id="v0y-pD-Z3K"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="S8T-UB-Z08"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="PeI-C8-IDD">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="trash" id="opM-98-m8D">
@@ -172,9 +134,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="bodyTextView" destination="Dnr-CQ-7hI" id="U5L-Cp-QuO"/>
-                        <outlet property="dateLabel" destination="Dw0-Aq-WMc" id="9uk-q7-hIV"/>
-                        <outlet property="titleLabel" destination="gSm-ms-vSb" id="Bb5-Sc-tqr"/>
+                        <outlet property="webview" destination="5r7-Ya-Vtk" id="BcZ-Sb-O5u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACx-pG-yf7" userLabel="First Responder" sceneMemberID="firstResponder"/>

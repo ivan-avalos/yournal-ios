@@ -22,6 +22,9 @@
 		E31938A2219FDE7500B1225A /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31938A1219FDE7500B1225A /* NoteCell.swift */; };
 		E31938A4219FE83300B1225A /* lmroman.otf in Resources */ = {isa = PBXBuildFile; fileRef = E31938A3219FE83300B1225A /* lmroman.otf */; };
 		E31938A6219FEA8E00B1225A /* ViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31938A5219FEA8E00B1225A /* ViewerViewController.swift */; };
+		E3DDDEAE2271354700B241EB /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = E3DDDEAD2271354700B241EB /* template.html */; };
+		E3DDDEB82271487E00B241EB /* template.md in Resources */ = {isa = PBXBuildFile; fileRef = E3DDDEB72271487E00B241EB /* template.md */; };
+		E3DDDEBC227149FD00B241EB /* lmroman-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E3DDDEBB227149FD00B241EB /* lmroman-bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		E31938A1219FDE7500B1225A /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		E31938A3219FE83300B1225A /* lmroman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lmroman.otf; sourceTree = "<group>"; };
 		E31938A5219FEA8E00B1225A /* ViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerViewController.swift; sourceTree = "<group>"; };
+		E3DDDEAD2271354700B241EB /* template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
+		E3DDDEB72271487E00B241EB /* template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = template.md; sourceTree = "<group>"; };
+		E3DDDEBB227149FD00B241EB /* lmroman-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lmroman-bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,9 @@
 			children = (
 				E3193890219FBD3300B1225A /* Assets.xcassets */,
 				E31938A3219FE83300B1225A /* lmroman.otf */,
+				E3DDDEBB227149FD00B241EB /* lmroman-bold.otf */,
+				E3DDDEAD2271354700B241EB /* template.html */,
+				E3DDDEB72271487E00B241EB /* template.md */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -225,8 +234,11 @@
 				E319389C219FBE8500B1225A /* GoogleService-Info.plist in Resources */,
 				E3193891219FBD3300B1225A /* Assets.xcassets in Resources */,
 				E319388F219FBD3000B1225A /* Main.storyboard in Resources */,
+				E3DDDEBC227149FD00B241EB /* lmroman-bold.otf in Resources */,
+				E3DDDEB82271487E00B241EB /* template.md in Resources */,
 				E31938A4219FE83300B1225A /* lmroman.otf in Resources */,
 				E313E12621A27AF600B26C95 /* Localizable.strings in Resources */,
+				E3DDDEAE2271354700B241EB /* template.html in Resources */,
 				E313E12C21A2987E00B26C95 /* About.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +260,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MMMarkdown/MMMarkdown.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -261,6 +274,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMMarkdown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",

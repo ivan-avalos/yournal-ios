@@ -23,23 +23,23 @@
 
 import UIKit
 import Firebase
+import WebKit
+import MMMarkdown
 
 protocol ViewerDelegate {
     func editNote(withID id: String)
-    func deleteNote(withID id: String)
+    func deleteNote(withID id: String, completion: @escaping ()->())
 }
 
 class ViewerViewController: UIViewController {
     var noteID: String!
     var delegate: ViewerDelegate!
-
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var bodyTextView: UITextView!
+    let htmlURL = Bundle.main.url(forResource: "template", withExtension: "html")!
+    let markdownURL = Bundle.main.url(forResource: "template", withExtension: "md")!
+    @IBOutlet var webview: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if let userID = Auth.auth().currentUser?.uid {
             Database.database().reference()
                 .child("users")
@@ -47,14 +47,28 @@ class ViewerViewController: UIViewController {
                 .child(noteID)
                 .observe(.value, with: { (snapshot) in
                     if let note = snapshot.value as? [String: String] {
-                        /*self.navigationItem.title = note["title"]*/
                         self.title = note["title"]
-                        self.titleLabel.text = note["title"]
-                        self.dateLabel.text = note["date"]
-                        self.bodyTextView.text = note["body"]
+                        if let html = self.loadFile(url: self.htmlURL),
+                            let markdown = self.loadFile(url: self.markdownURL) {
+                            let innerContent = String (
+                                format: markdown,
+                                note["title"] ?? "",
+                                note["date"] ?? "",
+                                note["body"] ?? "")
+                            if let innerParsed = try? MMMarkdown.htmlString(withMarkdown: innerContent) {
+                                let content = String(format: html, innerParsed)
+                                self.webview.loadHTMLString(content, baseURL: Bundle.main.bundleURL)
+                            }
+                        }
                     }
             })
         }
+    }
+    
+    func loadFile (url: URL) -> String? {
+        return try? String(
+            contentsOf: url,
+            encoding: String.Encoding.utf8)
     }
 
     @IBAction func onEditPressed(_ sender: UIBarButtonItem) {
@@ -62,9 +76,10 @@ class ViewerViewController: UIViewController {
     }
     
     @IBAction func onDeletePressed(_ sender: UIBarButtonItem) {
-        dismiss(animated: false, completion: nil)
-        navigationController?.popViewController(animated: false)
-        delegate.deleteNote(withID: noteID)
+        delegate.deleteNote(withID: noteID) {
+            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
 }
