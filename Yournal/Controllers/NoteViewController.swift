@@ -115,6 +115,7 @@ class NoteViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
         if dismiss {
             dismiss(animated: true, completion: nil)
             navigationController?.popViewController(animated: true)
+            view.endEditing(false)
         }
     }
     
@@ -136,6 +137,8 @@ class NoteViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
         }
         
         dismiss = true
+        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
         view.endEditing(false)
     }
     
