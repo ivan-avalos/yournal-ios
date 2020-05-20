@@ -7,10 +7,10 @@ target 'Yournal' do
 
   # FirebaseUI
   pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Email'
   pod 'FirebaseUI/Google'
   
   # Firebase
-  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
 

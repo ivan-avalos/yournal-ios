@@ -96,21 +96,24 @@ class MainViewController: UITableViewController {
         return noteCell
     }
     
-    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
-        let editAction = UITableViewRowAction(style: .default, title: NSLocalizedString("edit", comment: "Edit button"))
-        { (action, indexPath) in
-            self.editNote(noteID: self.dataset.reversed()[indexPath.row].uid)
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let note = self.dataset.reversed()[indexPath.row]
+        let editAction = UIContextualAction(style: .normal, title: NSLocalizedString("edit", comment: "Edit button"))
+        { (_, _, _) in
+            self.editNote(noteID: note.uid)
         }
-        editAction.backgroundColor = UIColor(red: 25/255, green: 118/255, blue: 210/255, alpha: 1.0)
-        
-        let deleteAction =
-            UITableViewRowAction(style: .destructive, title: NSLocalizedString("delete", comment: "Edit button"))
-        { (action, indexPath) in
-            self.deleteNote(id: self.dataset.reversed()[indexPath.row].uid, completion: nil)
+        editAction.backgroundColor = UIColor.systemBlue
+        if #available(iOS 13.0, *) {
+            editAction.image = UIImage(systemName: "pencil")
         }
-        
-        return [deleteAction, editAction]
+        let deleteAction = UIContextualAction(style: .destructive, title: NSLocalizedString("delete", comment: "Delete button")) { (_, _, _) in
+            self.deleteNote(id: note.uid, completion: nil)
+        }
+        if #available(iOS 13.0, *) {
+            deleteAction.image = UIImage(systemName: "trash")
+        }
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
+        return configuration
     }
     
     // MARK: - Table View Delegate Methods
@@ -229,7 +232,7 @@ extension MainViewController: CustomIOSAlertViewDelegate {
     func customIOS7dialogButtonTouchUp(inside alertView: Any!, clickedButtonAt buttonIndex: Int) {
         if buttonIndex == 0 {
             UIApplication.shared.open(
-                URL(string: "http://yournal.dulcedosystems.com")!,
+                URL(string: "https://yournal.avalos.me")!,
                 options: [:], completionHandler: nil)
         } else if buttonIndex == 1 {
             (alertView as! CustomIOSAlertView).close()

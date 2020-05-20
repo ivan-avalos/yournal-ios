@@ -33,9 +33,13 @@ class LoginViewController: UIViewController {
                 print("It's all good!")
             
                 authUI.delegate = self
-                authUI.providers = [FUIGoogleAuth()]
+                authUI.providers = [
+                    FUIEmailAuth(),
+                    FUIGoogleAuth()
+                ]
             
                 let authViewController = authUI.authViewController()
+                authViewController.presentationController?.delegate = self
                 present(authViewController, animated: true, completion: nil)
             }
         } else {
@@ -49,10 +53,18 @@ class LoginViewController: UIViewController {
     
 }
 
+extension LoginViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerShouldDismiss(_ presentationController: UIPresentationController) -> Bool {
+        return false
+    }
+}
+
 extension LoginViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
         if error != nil {
             return
+        } else {
+            showUI()
         }
     }
 }

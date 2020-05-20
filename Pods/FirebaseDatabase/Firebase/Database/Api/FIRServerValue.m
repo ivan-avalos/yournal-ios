@@ -14,17 +14,20 @@
  * limitations under the License.
  */
 
-#import "FIRDatabaseReference.h"
 #import "FIRServerValue.h"
 
 @implementation FIRServerValue
 
-+ (NSDictionary *) timestamp {
++ (NSDictionary *)timestamp {
     static NSDictionary *timestamp = nil;
     if (timestamp == nil) {
-        timestamp = @{ @".sv": @"timestamp" };
+        timestamp = @{@".sv" : @"timestamp"};
     }
     return timestamp;
+}
+
++ (NSDictionary *)increment:(NSNumber *)delta {
+    return @{@".sv" : @{@"increment" : delta}};
 }
 
 @end

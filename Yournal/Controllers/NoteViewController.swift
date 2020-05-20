@@ -29,7 +29,7 @@ enum NoteCode {
     case EDIT_NOTE
 }
 
-class NoteViewController: UIViewController, UITextFieldDelegate {
+class NoteViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     var code: NoteCode!
     var noteID: String?
     var note: DatabaseReference!
@@ -43,6 +43,7 @@ class NoteViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         titleTextField.becomeFirstResponder()
         titleTextField.delegate = self
+        bodyTextView.delegate = self
         
         /* Keyboard events */
         NotificationCenter.default
@@ -72,10 +73,27 @@ class NoteViewController: UIViewController, UITextFieldDelegate {
                     if let note = snapshot.value as? [String: String] {
                         self.titleTextField.text = note["title"]
                         self.bodyTextView.text = note["body"]
+                        self.updateDoneEnable()
                     }
                 })
             }
         }
+    }
+    
+    func updateDoneEnable() {
+        if titleTextField.text?.isEmpty ?? false || bodyTextView.text.isEmpty {
+            navigationItem.rightBarButtonItem?.isEnabled = false
+        } else {
+            navigationItem.rightBarButtonItem?.isEnabled = true
+        }
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        updateDoneEnable()
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        updateDoneEnable()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -122,7 +140,8 @@ class NoteViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onCancelPressed(_ sender: UIBarButtonItem) {
-        dismiss = true
+        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
         view.endEditing(false)
     }
     

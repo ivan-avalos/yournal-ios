@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,17 +18,65 @@
                     <rect key="frame" x="10" y="10" width="273" height="182"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promo" translatesAutoresizingMaskIntoConstraints="NO" id="YEt-fF-Dq9">
-                            <rect key="frame" x="20" y="0.0" width="233" height="96"/>
+                            <rect key="frame" x="20" y="0.0" width="233" height="121"/>
                         </imageView>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sa-dF-enb">
-                            <rect key="frame" x="0.0" y="110" width="273" height="72"/>
+                            <rect key="frame" x="0.0" y="135" width="273" height="47"/>
                             <attributedString key="attributedText">
                                 <fragment content="Copyright ">
                                     <attributes>
                                         <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <font key="NSFont" size="14" name="Helvetica-Bold"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                        <font key="NSFont" size="14" name="Merriweather-Black"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops>
+                                                <textTab alignment="left" location="28.299999237060547">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="56.650001525878906">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="85">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="113.34999847412109">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="141.69999694824219">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="170.05000305175781">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="198.39999389648438">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="226.75">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="255.10000610351562">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="283.45001220703125">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="311.79998779296875">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="340.14999389648438">
+                                                    <options/>
+                                                </textTab>
+                                            </tabStops>
+                                        </paragraphStyle>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="© 2020">
+                                    <attributes>
+                                        <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="14" name="Merriweather-Black"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                             <tabStops>
                                                 <textTab alignment="left" location="28.299999237060547">
                                                     <options/>
@@ -72,14 +119,15 @@
                                     </attributes>
                                 </fragment>
                                 <fragment>
-                                    <string key="content">© 2018
+                                    <string key="content" base64-UTF8="YES">
+Cg
 </string>
                                     <attributes>
                                         <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                        <font key="NSFont" size="14" name="Merriweather-Regular"/>
                                         <real key="NSKern" value="0.0"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                             <tabStops>
                                                 <textTab alignment="left" location="28.299999237060547">
                                                     <options/>
@@ -125,7 +173,7 @@
                                     <attributes>
                                         <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <font key="NSFont" size="14" name="Helvetica"/>
+                                        <font key="NSFont" size="14" name="Merriweather-Regular"/>
                                         <real key="NSKern" value="0.0"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                             <tabStops>
@@ -197,6 +245,6 @@
         </view>
     </objects>
     <resources>
-        <image name="promo" width="240" height="96.800003051757812"/>
+        <image name="promo" width="300" height="121"/>
     </resources>
 </document>

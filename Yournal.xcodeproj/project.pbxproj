@@ -3,11 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DE69840F66BFE1CBDB0EEFA /* Pods_Yournal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5FC83FB884DD980791DC1 /* Pods_Yournal.framework */; };
+		C2CC48529F728593618E948D /* Pods_Yournal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CC7B118996F217FC167507 /* Pods_Yournal.framework */; };
+		E310F52B2474F3C9006D286A /* merriweather_italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E310F5232474F3C1006D286A /* merriweather_italic.otf */; };
+		E310F52C2474F3C9006D286A /* merriweather_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E310F5242474F3C2006D286A /* merriweather_bold.otf */; };
+		E310F52D2474F3C9006D286A /* merriweather_bold_italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E310F5252474F3C3006D286A /* merriweather_bold_italic.otf */; };
+		E310F52E2474F3C9006D286A /* merriweather_black_italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E310F5262474F3C4006D286A /* merriweather_black_italic.otf */; };
+		E310F52F2474F3C9006D286A /* merriweather_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E310F5272474F3C6006D286A /* merriweather_regular.otf */; };
+		E310F5302474F3C9006D286A /* merriweather_black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E310F5282474F3C7006D286A /* merriweather_black.otf */; };
+		E310F5312474F3C9006D286A /* merriweather_light_italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E310F5292474F3C8006D286A /* merriweather_light_italic.otf */; };
+		E310F5322474F3C9006D286A /* merriweather_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E310F52A2474F3C9006D286A /* merriweather_light.otf */; };
+		E310F5342474F58F006D286A /* template-dark.html in Resources */ = {isa = PBXBuildFile; fileRef = E310F5332474F58F006D286A /* template-dark.html */; };
 		E313E11E21A25A0F00B26C95 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E313E11D21A25A0F00B26C95 /* NoteViewController.swift */; };
 		E313E12621A27AF600B26C95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E313E12821A27AF600B26C95 /* Localizable.strings */; };
 		E313E12C21A2987E00B26C95 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = E313E12E21A2987E00B26C95 /* About.xib */; };
@@ -20,17 +29,30 @@
 		E319389E219FC6EC00B1225A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319389D219FC6EC00B1225A /* MainViewController.swift */; };
 		E31938A0219FD4E300B1225A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319389F219FD4E300B1225A /* Note.swift */; };
 		E31938A2219FDE7500B1225A /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31938A1219FDE7500B1225A /* NoteCell.swift */; };
-		E31938A4219FE83300B1225A /* lmroman.otf in Resources */ = {isa = PBXBuildFile; fileRef = E31938A3219FE83300B1225A /* lmroman.otf */; };
 		E31938A6219FEA8E00B1225A /* ViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31938A5219FEA8E00B1225A /* ViewerViewController.swift */; };
 		E3DDDEAE2271354700B241EB /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = E3DDDEAD2271354700B241EB /* template.html */; };
 		E3DDDEB82271487E00B241EB /* template.md in Resources */ = {isa = PBXBuildFile; fileRef = E3DDDEB72271487E00B241EB /* template.md */; };
-		E3DDDEBC227149FD00B241EB /* lmroman-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E3DDDEBB227149FD00B241EB /* lmroman-bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3DC267B7807C576F1060FA9B /* Pods-Yournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yournal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yournal/Pods-Yournal.debug.xcconfig"; sourceTree = "<group>"; };
-		4EF5FC83FB884DD980791DC1 /* Pods_Yournal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yournal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF435C45A27102C15C1226E3 /* Pods-Yournal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yournal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yournal/Pods-Yournal.release.xcconfig"; sourceTree = "<group>"; };
+		41CC7B118996F217FC167507 /* Pods_Yournal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yournal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD853A0914D14148504FD76 /* Pods-Yournal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yournal.release.xcconfig"; path = "Target Support Files/Pods-Yournal/Pods-Yournal.release.xcconfig"; sourceTree = "<group>"; };
+		603F54F873D8698E0375C71C /* Pods-Yournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yournal.debug.xcconfig"; path = "Target Support Files/Pods-Yournal/Pods-Yournal.debug.xcconfig"; sourceTree = "<group>"; };
+		E310F5222474ED15006D286A /* Yournal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yournal.entitlements; sourceTree = "<group>"; };
+		E310F5232474F3C1006D286A /* merriweather_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_italic.otf; sourceTree = "<group>"; };
+		E310F5242474F3C2006D286A /* merriweather_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_bold.otf; sourceTree = "<group>"; };
+		E310F5252474F3C3006D286A /* merriweather_bold_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_bold_italic.otf; sourceTree = "<group>"; };
+		E310F5262474F3C4006D286A /* merriweather_black_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_black_italic.otf; sourceTree = "<group>"; };
+		E310F5272474F3C6006D286A /* merriweather_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_regular.otf; sourceTree = "<group>"; };
+		E310F5282474F3C7006D286A /* merriweather_black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_black.otf; sourceTree = "<group>"; };
+		E310F5292474F3C8006D286A /* merriweather_light_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_light_italic.otf; sourceTree = "<group>"; };
+		E310F52A2474F3C9006D286A /* merriweather_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_light.otf; sourceTree = "<group>"; };
+		E310F5332474F58F006D286A /* template-dark.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "template-dark.html"; sourceTree = "<group>"; };
+		E310F535247505C5006D286A /* FirebaseGoogleAuthUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = FirebaseGoogleAuthUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E310F538247505FD006D286A /* FirebaseGoogleAuthUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = FirebaseGoogleAuthUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E310F539247505FD006D286A /* GoogleDataTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E310F53A247505FD006D286A /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransportCCTSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E310F53B247505FD006D286A /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E313E11D21A25A0F00B26C95 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		E313E11F21A278DD00B26C95 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
 		E313E12321A27A2300B26C95 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-419"; path = "es-419.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
@@ -48,11 +70,9 @@
 		E319389D219FC6EC00B1225A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E319389F219FD4E300B1225A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		E31938A1219FDE7500B1225A /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
-		E31938A3219FE83300B1225A /* lmroman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lmroman.otf; sourceTree = "<group>"; };
 		E31938A5219FEA8E00B1225A /* ViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerViewController.swift; sourceTree = "<group>"; };
 		E3DDDEAD2271354700B241EB /* template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		E3DDDEB72271487E00B241EB /* template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = template.md; sourceTree = "<group>"; };
-		E3DDDEBB227149FD00B241EB /* lmroman-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lmroman-bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,26 +80,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE69840F66BFE1CBDB0EEFA /* Pods_Yournal.framework in Frameworks */,
+				C2CC48529F728593618E948D /* Pods_Yournal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		275F2710A2C9AF46DC71D222 /* Pods */ = {
+		2116542884C90A0BC1CACC14 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3DC267B7807C576F1060FA9B /* Pods-Yournal.debug.xcconfig */,
-				DF435C45A27102C15C1226E3 /* Pods-Yournal.release.xcconfig */,
+				603F54F873D8698E0375C71C /* Pods-Yournal.debug.xcconfig */,
+				4BD853A0914D14148504FD76 /* Pods-Yournal.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		B78B076341E8A1D4861C2E2E /* Frameworks */ = {
+		C5D1D6C2B262D6EE9A5C754C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4EF5FC83FB884DD980791DC1 /* Pods_Yournal.framework */,
+				E310F538247505FD006D286A /* FirebaseGoogleAuthUI.bundle */,
+				E310F539247505FD006D286A /* GoogleDataTransport.framework */,
+				E310F53A247505FD006D286A /* GoogleDataTransportCCTSupport.framework */,
+				E310F53B247505FD006D286A /* GoogleUtilities.framework */,
+				E310F535247505C5006D286A /* FirebaseGoogleAuthUI.bundle */,
+				41CC7B118996F217FC167507 /* Pods_Yournal.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,8 +114,8 @@
 			children = (
 				E3193888219FBD3000B1225A /* Yournal */,
 				E3193887219FBD3000B1225A /* Products */,
-				275F2710A2C9AF46DC71D222 /* Pods */,
-				B78B076341E8A1D4861C2E2E /* Frameworks */,
+				2116542884C90A0BC1CACC14 /* Pods */,
+				C5D1D6C2B262D6EE9A5C754C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +130,7 @@
 		E3193888219FBD3000B1225A /* Yournal */ = {
 			isa = PBXGroup;
 			children = (
+				E310F5222474ED15006D286A /* Yournal.entitlements */,
 				E3193889219FBD3000B1225A /* AppDelegate.swift */,
 				E3193895219FBD3300B1225A /* Info.plist */,
 				E31938A8219FEAAB00B1225A /* Resources */,
@@ -132,10 +158,17 @@
 			isa = PBXGroup;
 			children = (
 				E3193890219FBD3300B1225A /* Assets.xcassets */,
-				E31938A3219FE83300B1225A /* lmroman.otf */,
-				E3DDDEBB227149FD00B241EB /* lmroman-bold.otf */,
+				E310F5262474F3C4006D286A /* merriweather_black_italic.otf */,
+				E310F5282474F3C7006D286A /* merriweather_black.otf */,
+				E310F5252474F3C3006D286A /* merriweather_bold_italic.otf */,
+				E310F5242474F3C2006D286A /* merriweather_bold.otf */,
+				E310F5232474F3C1006D286A /* merriweather_italic.otf */,
+				E310F5292474F3C8006D286A /* merriweather_light_italic.otf */,
+				E310F52A2474F3C9006D286A /* merriweather_light.otf */,
+				E310F5272474F3C6006D286A /* merriweather_regular.otf */,
 				E3DDDEAD2271354700B241EB /* template.html */,
 				E3DDDEB72271487E00B241EB /* template.md */,
+				E310F5332474F58F006D286A /* template-dark.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -174,12 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3193898219FBD3300B1225A /* Build configuration list for PBXNativeTarget "Yournal" */;
 			buildPhases = (
-				96AA098FB41BC2A9E867BB67 /* [CP] Check Pods Manifest.lock */,
+				073F57EDB5348F893B16E9C5 /* [CP] Check Pods Manifest.lock */,
 				E3193882219FBD3000B1225A /* Sources */,
 				E3193883219FBD3000B1225A /* Frameworks */,
 				E3193884219FBD3000B1225A /* Resources */,
-				5B28856E525B628F17EE3A0E /* [CP] Embed Pods Frameworks */,
-				8E1D49E26A9EE2E003D7DC84 /* [CP] Copy Pods Resources */,
+				5774974CBCDE5477779E61A5 /* [CP] Embed Pods Frameworks */,
+				6C5041108B379EAF0FAA7EC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,87 +263,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E310F52D2474F3C9006D286A /* merriweather_bold_italic.otf in Resources */,
 				E3193894219FBD3300B1225A /* LaunchScreen.storyboard in Resources */,
 				E319389C219FBE8500B1225A /* GoogleService-Info.plist in Resources */,
+				E310F52B2474F3C9006D286A /* merriweather_italic.otf in Resources */,
+				E310F52E2474F3C9006D286A /* merriweather_black_italic.otf in Resources */,
+				E310F5312474F3C9006D286A /* merriweather_light_italic.otf in Resources */,
 				E3193891219FBD3300B1225A /* Assets.xcassets in Resources */,
 				E319388F219FBD3000B1225A /* Main.storyboard in Resources */,
-				E3DDDEBC227149FD00B241EB /* lmroman-bold.otf in Resources */,
+				E310F52F2474F3C9006D286A /* merriweather_regular.otf in Resources */,
+				E310F5302474F3C9006D286A /* merriweather_black.otf in Resources */,
 				E3DDDEB82271487E00B241EB /* template.md in Resources */,
-				E31938A4219FE83300B1225A /* lmroman.otf in Resources */,
 				E313E12621A27AF600B26C95 /* Localizable.strings in Resources */,
 				E3DDDEAE2271354700B241EB /* template.html in Resources */,
+				E310F5322474F3C9006D286A /* merriweather_light.otf in Resources */,
 				E313E12C21A2987E00B26C95 /* About.xib in Resources */,
+				E310F5342474F58F006D286A /* template-dark.html in Resources */,
+				E310F52C2474F3C9006D286A /* merriweather_bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B28856E525B628F17EE3A0E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Yournal/Pods-Yournal-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CustomIOSAlertView/CustomIOSAlertView.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MMMarkdown/MMMarkdown.framework",
-				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CustomIOSAlertView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMMarkdown.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yournal/Pods-Yournal-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E1D49E26A9EE2E003D7DC84 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Yournal/Pods-Yournal-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yournal/Pods-Yournal-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96AA098FB41BC2A9E867BB67 /* [CP] Check Pods Manifest.lock */ = {
+		073F57EDB5348F893B16E9C5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -330,6 +306,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5774974CBCDE5477779E61A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C5041108B379EAF0FAA7EC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -510,10 +520,13 @@
 		};
 		E3193899219FBD3300B1225A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DC267B7807C576F1060FA9B /* Pods-Yournal.debug.xcconfig */;
+			baseConfigurationReference = 603F54F873D8698E0375C71C /* Pods-Yournal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Yournal/Yournal.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 358YRZ9P3L;
 				INFOPLIST_FILE = Yournal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -521,8 +534,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dulcedosystems.Yournal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -530,10 +545,13 @@
 		};
 		E319389A219FBD3300B1225A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF435C45A27102C15C1226E3 /* Pods-Yournal.release.xcconfig */;
+			baseConfigurationReference = 4BD853A0914D14148504FD76 /* Pods-Yournal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Yournal/Yournal.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 358YRZ9P3L;
 				INFOPLIST_FILE = Yournal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -541,8 +559,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dulcedosystems.Yournal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
