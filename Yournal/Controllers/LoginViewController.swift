@@ -23,7 +23,9 @@
 
 import UIKit
 import Firebase
-import FirebaseUI
+import FirebaseAuthUI
+import FirebaseEmailAuthUI
+import FirebaseGoogleAuthUI
 
 class LoginViewController: UIViewController {
     
@@ -35,7 +37,7 @@ class LoginViewController: UIViewController {
                 authUI.delegate = self
                 authUI.providers = [
                     FUIEmailAuth(),
-                    FUIGoogleAuth()
+                    FUIGoogleAuth(authUI: authUI)
                 ]
             
                 let authViewController = authUI.authViewController()

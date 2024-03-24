@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,11 +25,11 @@
 		E319388F219FBD3000B1225A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E319388D219FBD3000B1225A /* Main.storyboard */; };
 		E3193891219FBD3300B1225A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3193890219FBD3300B1225A /* Assets.xcassets */; };
 		E3193894219FBD3300B1225A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3193892219FBD3300B1225A /* LaunchScreen.storyboard */; };
-		E319389C219FBE8500B1225A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E319389B219FBE8500B1225A /* GoogleService-Info.plist */; };
 		E319389E219FC6EC00B1225A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319389D219FC6EC00B1225A /* MainViewController.swift */; };
 		E31938A0219FD4E300B1225A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319389F219FD4E300B1225A /* Note.swift */; };
 		E31938A2219FDE7500B1225A /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31938A1219FDE7500B1225A /* NoteCell.swift */; };
 		E31938A6219FEA8E00B1225A /* ViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31938A5219FEA8E00B1225A /* ViewerViewController.swift */; };
+		E393246D2BAFD809008DDB13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E393246C2BAFD809008DDB13 /* GoogleService-Info.plist */; };
 		E3DDDEAE2271354700B241EB /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = E3DDDEAD2271354700B241EB /* template.html */; };
 		E3DDDEB82271487E00B241EB /* template.md in Resources */ = {isa = PBXBuildFile; fileRef = E3DDDEB72271487E00B241EB /* template.md */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,6 @@
 		41CC7B118996F217FC167507 /* Pods_Yournal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yournal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD853A0914D14148504FD76 /* Pods-Yournal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yournal.release.xcconfig"; path = "Target Support Files/Pods-Yournal/Pods-Yournal.release.xcconfig"; sourceTree = "<group>"; };
 		603F54F873D8698E0375C71C /* Pods-Yournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yournal.debug.xcconfig"; path = "Target Support Files/Pods-Yournal/Pods-Yournal.debug.xcconfig"; sourceTree = "<group>"; };
-		E310F5222474ED15006D286A /* Yournal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yournal.entitlements; sourceTree = "<group>"; };
 		E310F5232474F3C1006D286A /* merriweather_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_italic.otf; sourceTree = "<group>"; };
 		E310F5242474F3C2006D286A /* merriweather_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_bold.otf; sourceTree = "<group>"; };
 		E310F5252474F3C3006D286A /* merriweather_bold_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = merriweather_bold_italic.otf; sourceTree = "<group>"; };
@@ -66,11 +65,11 @@
 		E3193890219FBD3300B1225A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3193893219FBD3300B1225A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3193895219FBD3300B1225A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E319389B219FBE8500B1225A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E319389D219FC6EC00B1225A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E319389F219FD4E300B1225A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		E31938A1219FDE7500B1225A /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		E31938A5219FEA8E00B1225A /* ViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerViewController.swift; sourceTree = "<group>"; };
+		E393246C2BAFD809008DDB13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3DDDEAD2271354700B241EB /* template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		E3DDDEB72271487E00B241EB /* template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = template.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,7 +129,6 @@
 		E3193888219FBD3000B1225A /* Yournal */ = {
 			isa = PBXGroup;
 			children = (
-				E310F5222474ED15006D286A /* Yournal.entitlements */,
 				E3193889219FBD3000B1225A /* AppDelegate.swift */,
 				E3193895219FBD3300B1225A /* Info.plist */,
 				E31938A8219FEAAB00B1225A /* Resources */,
@@ -187,7 +185,7 @@
 		E31938AA219FEAD800B1225A /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				E319389B219FBE8500B1225A /* GoogleService-Info.plist */,
+				E393246C2BAFD809008DDB13 /* GoogleService-Info.plist */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -212,7 +210,6 @@
 				E3193883219FBD3000B1225A /* Frameworks */,
 				E3193884219FBD3000B1225A /* Resources */,
 				5774974CBCDE5477779E61A5 /* [CP] Embed Pods Frameworks */,
-				6C5041108B379EAF0FAA7EC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,8 +226,9 @@
 		E319387E219FBD3000B1225A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = "Iván Ávalos";
 				TargetAttributes = {
 					E3193885219FBD3000B1225A = {
@@ -265,7 +263,6 @@
 			files = (
 				E310F52D2474F3C9006D286A /* merriweather_bold_italic.otf in Resources */,
 				E3193894219FBD3300B1225A /* LaunchScreen.storyboard in Resources */,
-				E319389C219FBE8500B1225A /* GoogleService-Info.plist in Resources */,
 				E310F52B2474F3C9006D286A /* merriweather_italic.otf in Resources */,
 				E310F52E2474F3C9006D286A /* merriweather_black_italic.otf in Resources */,
 				E310F5312474F3C9006D286A /* merriweather_light_italic.otf in Resources */,
@@ -274,6 +271,7 @@
 				E310F52F2474F3C9006D286A /* merriweather_regular.otf in Resources */,
 				E310F5302474F3C9006D286A /* merriweather_black.otf in Resources */,
 				E3DDDEB82271487E00B241EB /* template.md in Resources */,
+				E393246D2BAFD809008DDB13 /* GoogleService-Info.plist in Resources */,
 				E313E12621A27AF600B26C95 /* Localizable.strings in Resources */,
 				E3DDDEAE2271354700B241EB /* template.html in Resources */,
 				E310F5322474F3C9006D286A /* merriweather_light.otf in Resources */,
@@ -323,23 +321,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C5041108B379EAF0FAA7EC1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yournal/Pods-Yournal-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -427,6 +408,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -438,6 +420,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -452,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -489,6 +472,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -500,6 +484,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -508,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -528,8 +513,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 358YRZ9P3L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Yournal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,8 +539,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 358YRZ9P3L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Yournal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -23,7 +23,7 @@
 
 import UIKit
 import Firebase
-import FirebaseUI
+import FirebaseAuthUI
 import ProgressHUD
 import CustomIOSAlertView
 
@@ -48,8 +48,8 @@ class MainViewController: UITableViewController {
         tableView.dataSource = self
         
         // ProgressHUD
-        ProgressHUD.show()
-        
+        ProgressHUD.animate()
+
         // Firebase setup
         ref.child("users").child(auth.uid).observe(.value, with: { (snapshot) in
             ProgressHUD.dismiss()
@@ -215,7 +215,7 @@ class MainViewController: UITableViewController {
                     
                     self.dismiss(animated: true, completion: nil)
                     self.navigationController?.popViewController(animated: true)
-                } catch { ProgressHUD.show(error.localizedDescription) }
+                } catch { ProgressHUD.error(error.localizedDescription) }
         }
         alertController.addAction(logoutAction)
         
